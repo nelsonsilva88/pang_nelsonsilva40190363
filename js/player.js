@@ -18,9 +18,7 @@ export class Player extends Phaser.Physics.Arcade.Sprite{
     }
     update(time) {
 
-        // if(this.controls.space.isDown){
-        //     this.fireHarpoon();
-        // }
+       
         if(this.controls.left.isDown) {
             this.setVelocityX(-this.horizontal_velocity);
             this.flipX = true;

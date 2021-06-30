@@ -40,13 +40,7 @@ create() {
     this.physics.add.collider(this.harpoon, this.groupBall);
 
 
-    // this.ballFirst = new Ball(
-    //     this,
-    //     this.game.config.width * 0.5,
-    //     this.game.config.height * 0.3,
-    //     'ball', 0.5, 300, false
-    // );
-    
+ 
 }
 
 
@@ -88,7 +82,7 @@ hitHarpoon(harpoon,targets){
         this.scene.start("nivel2"); 
     }
 }
- //adiciona as bolas a cena
+ 
  addBall(x,y,scale){
     this.groupBall.add(new Ball(this,x,y,'ball',scale, 200, true));
 }
